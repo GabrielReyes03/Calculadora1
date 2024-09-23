@@ -1,0 +1,155 @@
+/* Estilos generales */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #1e1e2f; /* Fondo oscuro */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  background: #2c2c3e; /* Fondo oscuro para el contenedor */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.title {
+  color: #f8f8f2; /* Texto claro */
+  font-size: 24px;
+  margin-bottom: 10px; /* Espacio inferior */
+}
+.autor {
+  color: red; /* Texto claro */
+  font-size: 24px;
+  margin-bottom: 10px; /* Espacio inferior */
+}
+
+.description {
+  color: #a4a4b8; /* Gris claro */
+  margin-bottom: 20px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #444; /* Bordes oscuros */
+  background-color: #3b3b4f; /* Fondo oscuro para inputs */
+  color: #f8f8f2; /* Texto claro */
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.input:focus {
+  border-color: #f8f8f2;
+  outline: none;
+}
+
+.calculate-button {
+  background-color: #ff5f5f; /* Rojo vibrante */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.calculate-button:hover {
+  background-color: #ff7979; /* Más claro en hover */
+}
+
+/* Estilos del modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con transparencia */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+.modal-content {
+  background-color: #2c2c3e; /* Fondo oscuro en el modal */
+  padding: 30px;
+  border-radius: 10px;
+  text-align: left;
+  position: relative;
+  max-width: 600px;
+  width: 80%;
+  animation: scaleUp 0.3s ease;
+  color: #f8f8f2; /* Texto claro */
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  color: #ff5f5f; /* Rojo vibrante para el botón de cerrar */
+  cursor: pointer;
+}
+
+.procedure-text {
+  white-space: pre-line;
+  font-family: 'Courier New', Courier, monospace;
+  color: #f8f8f2;
+}
+
+.modal-content p {
+  color: #f8f8f2;
+}
+
+/* Botones para alternar entre fracción y decimal */
+.button-container {
+  margin-top: 20px;
+}
+
+.toggle-button {
+  background-color: #444; /* Fondo oscuro */
+  color: #f8f8f2; /* Texto claro */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: #555; /* Más claro en hover */
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1);
+  }
+}
